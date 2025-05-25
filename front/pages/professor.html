@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Professor | BRATSO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo-bratso.png" alt="BRATSO Logo">
+                <div class="logo-text">
+                    <h1>BRATSO</h1>
+                    <p class="tagline">Educação Transformadora</p>
+                </div>
+            </a>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="professor.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="professor-turmas.html"><i class="fas fa-users"></i> Minhas Turmas</a></li>
+                <li><a href="professor-conteudo.html"><i class="fas fa-book"></i> Conteúdo</a></li>
+                <li><a href="professor-mentorias.html"><i class="fas fa-chalkboard-teacher"></i> Mentorias</a></li>
+                <li><a href="professor-relatorios.html"><i class="fas fa-chart-bar"></i> Relatórios</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-actions">
+            <div class="user-info">
+                <span class="user-email" id="userEmail"></span>
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="teacher-dashboard">
+        <section class="welcome-banner">
+            <div class="container">
+                <div class="welcome-content">
+                    <h1>Bem-vindo, <span id="teacherName">Professor</span>!</h1>
+                    <p>Acompanhe suas turmas e interaja com seus alunos</p>
+                </div>
+                <div class="teacher-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Turmas</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>
+                            <span class="stat-number">87</span>
+                            <span class="stat-label">Alunos</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Mentorias Agendadas</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Mensagens</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teacher-classes">
+            <div class="container">
+                <h2><i class="fas fa-users"></i> Suas Turmas Recentes</h2>
+                
+                <div class="class-cards">
+                    <div class="class-card">
+                        <div class="class-header">
+                            <h3>Desenvolvimento de Jogos - Turma DJ23A</h3>
+                            <span class="class-status">Em andamento</span>
+                        </div>
+                        <div class="class-meta">
+                            <span><i class="fas fa-user-graduate"></i> 24 alunos</span>
+                            <span><i class="fas fa-percentage"></i> 68% progresso médio</span>
+                            <span><i class="fas fa-star"></i> 4.8/5 avaliação</span>
+                        </div>
+                        <div class="class-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 68%"></div>
+                            </div>
+                        </div>
+                        <div class="class-students">
+                            <h4>Alunos em destaque:</h4>
+                            <div class="student-profiles">
+                                <img src="../images/aluno1.jpg" alt="Aluno" title="João Silva - 92%">
+                                <img src="../images/aluno2.jpg" alt="Aluno" title="Maria Oliveira - 88%">
+                                <img src="../images/aluno3.jpg" alt="Aluno" title="Carlos Souza - 85%">
+                                <span>+21</span>
+                            </div>
+                        </div>
+                        <div class="class-actions">
+                            <a href="professor-turma-detalhe.html" class="action-btn primary"><i class="fas fa-eye"></i> Ver Turma</a>
+                            <a href="#" class="action-btn secondary"><i class="fas fa-envelope"></i> Mensagem</a>
+                            <a href="#" class="action-btn tertiary"><i class="fas fa-chart-line"></i> Relatório</a>
+                        </div>
+                    </div>
+                    
+                    <div class="class-card">
+                        <div class="class-header">
+                            <h3>Empreendedorismo Digital - Turma ED23B</h3>
+                            <span class="class-status">Em andamento</span>
+                        </div>
+                        <div class="class-meta">
+                            <span><i class="fas fa-user-graduate"></i> 18 alunos</span>
+                            <span><i class="fas fa-percentage"></i> 52% progresso médio</span>
+                            <span><i class="fas fa-star"></i> 4.6/5 avaliação</span>
+                        </div>
+                        <div class="class-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 52%"></div>
+                            </div>
+                        </div>
+                        <div class="class-students">
+                            <h4>Alunos em destaque:</h4>
+                            <div class="student-profiles">
+                                <img src="../images/aluno4.jpg" alt="Aluno" title="Ana Costa - 95%">
+                                <img src="../images/aluno5.jpg" alt="Aluno" title="Pedro Mendes - 89%">
+                                <img src="../images/aluno6.jpg" alt="Aluno" title="Luiza Fernandes - 82%">
+                                <span>+15</span>
+                            </div>
+                        </div>
+                        <div class="class-actions">
+                            <a href="professor-turma-detalhe.html" class="action-btn primary"><i class="fas fa-eye"></i> Ver Turma</a>
+                            <a href="#" class="action-btn secondary"><i class="fas fa-envelope"></i> Mensagem</a>
+                            <a href="#" class="action-btn tertiary"><i class="fas fa-chart-line"></i> Relatório</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="professor-turmas.html" class="see-all">Ver todas as turmas</a>
+            </div>
+        </section>
+
+        <section class="teacher-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-card upcoming-mentorships">
+                        <h3><i class="fas fa-chalkboard-teacher"></i> Próximas Mentorias</h3>
+                        <div class="mentorship-list">
+                            <div class="mentorship-item">
+                                <div class="mentorship-date">
+                                    <span class="day">22</span>
+                                    <span class="month">MAR</span>
+                                </div>
+                                <div class="mentorship-info">
+                                    <h4>Mentoria Individual</h4>
+                                    <p><i class="fas fa-clock"></i> 15:00 - 16:00</p>
+                                    <p><i class="fas fa-video"></i> Online</p>
+                                    <p class="student-name"><i class="fas fa-user-graduate"></i> João Silva (Plano Startup)</p>
+                                    <p class="mentorship-topic"><i class="fas fa-comment"></i> Discussão sobre mecânicas de jogo</p>
+                                </div>
+                                <div class="mentorship-actions">
+                                    <a href="#" class="action-btn small"><i class="fas fa-edit"></i> Editar</a>
+                                    <a href="#" class="action-btn small primary"><i class="fas fa-video"></i> Iniciar</a>
+                                </div>
+                            </div>
+                            <div class="mentorship-item">
+                                <div class="mentorship-date">
+                                    <span class="day">24</span>
+                                    <span class="month">MAR</span>
+                                </div>
+                                <div class="mentorship-info">
+                                    <h4>Mentoria em Grupo</h4>
+                                    <p><i class="fas fa-clock"></i> 19:00 - 20:30</p>
+                                    <p><i class="fas fa-video"></i> Online</p>
+                                    <p class="student-name"><i class="fas fa-users"></i> Turma ED23B (Plano Empreendedor)</p>
+                                    <p class="mentorship-topic"><i class="fas fa-comment"></i> Apresentação de Canvas</p>
+                                </div>
+                                <div class="mentorship-actions">
+                                    <a href="#" class="action-btn small"><i class="fas fa-edit"></i> Editar</a>
+                                    <a href="#" class="action-btn small primary"><i class="fas fa-video"></i> Iniciar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="professor-mentorias.html" class="see-all">Ver todas as mentorias</a>
+                    </div>
+                    
+                    <div class="content-card messages">
+                        <h3><i class="fas fa-inbox"></i> Mensagens Recentes <span class="badge">5</span></h3>
+                        <div class="message-list">
+                            <div class="message-item unread">
+                                <div class="message-sender">
+                                    <img src="../images/aluno1.jpg" alt="Aluno">
+                                    <div>
+                                        <span>Ana Oliveira</span>
+                                        <span class="message-subject">Dúvida sobre Unity</span>
+                                    </div>
+                                </div>
+                                <div class="message-preview">
+                                    <p>Professor, não consegui implementar o sistema de colisão como mostrado na aula...</p>
+                                </div>
+                                <div class="message-meta">
+                                    <span class="message-time">Hoje, 09:15</span>
+                                    <span class="message-course">DJ23A</span>
+                                </div>
+                            </div>
+                            <div class="message-item">
+                                <div class="message-sender">
+                                    <img src="../images/aluno2.jpg" alt="Aluno">
+                                    <div>
+                                        <span>Carlos Mendes</span>
+                                        <span class="message-subject">Feedback Canvas</span>
+                                    </div>
+                                </div>
+                                <div class="message-preview">
+                                    <p>Segue anexo o canvas atualizado do meu projeto após suas sugestões...</p>
+                                </div>
+                                <div class="message-meta">
+                                    <span class="message-time">Ontem, 18:30</span>
+                                    <span class="message-course">ED23B</span>
+                                </div>
+                            </div>
+                            <div class="message-item unread">
+                                <div class="message-sender">
+                                    <img src="../images/aluno3.jpg" alt="Aluno">
+                                    <div>
+                                        <span>Mariana Costa</span>
+                                        <span class="message-subject">Entrega de projeto</span>
+                                    </div>
+                                </div>
+                                <div class="message-preview">
+                                    <p>Professor, gostaria de solicitar uma extensão no prazo para entrega do projeto final...</p>
+                                </div>
+                                <div class="message-meta">
+                                    <span class="message-time">Ontem, 14:45</span>
+                                    <span class="message-course">DJ23A</span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="professor-mensagens.html" class="see-all">Ver todas as mensagens</a>
+                    </div>
+                    
+                    <div class="content-card content-management">
+                        <h3><i class="fas fa-book"></i> Gerenciamento de Conteúdo</h3>
+                        <div class="content-actions">
+                            <a href="professor-adicionar-aula.html" class="content-action">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Adicionar Nova Aula</span>
+                            </a>
+                            <a href="professor-adicionar-material.html" class="content-action">
+                                <i class="fas fa-file-upload"></i>
+                                <span>Enviar Material</span>
+                            </a>
+                            <a href="professor-avaliacoes.html" class="content-action">
+                                <i class="fas fa-clipboard-check"></i>
+                                <span>Criar Avaliação</span>
+                            </a>
+                            <a href="professor-forum.html" class="content-action">
+                                <i class="fas fa-comments"></i>
+                                <span>Moderar Fórum</span>
+                            </a>
+                        </div>
+                        <div class="recent-content">
+                            <h4>Conteúdo Recente</h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-play-circle"></i>
+                                    <span>Aula: Física no Unity - 18/03</span>
+                                    <span class="content-stats">85% assistiram</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Material: Guia de Boas Práticas - 15/03</span>
+                                    <span class="content-stats">72% baixaram</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-question-circle"></i>
+                                    <span>Avaliação: Módulo 2 - 10/03</span>
+                                    <span class="content-stats">Nota média: 8.2</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="content-card quick-tasks">
+                        <h3><i class="fas fa-tasks"></i> Tarefas Rápidas</h3>
+                        <div class="task-list">
+                            <div class="task-item">
+                                <input type="checkbox" id="task1">
+                                <label for="task1">Corrigir avaliações da turma DJ23A</label>
+                                <span class="task-due">Prazo: 24/03</span>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task2">
+                                <label for="task2">Preparar material para mentoria</label>
+                                <span class="task-due">Prazo: 22/03</span>
+                            </div>
+                            <div class="task-item">
+                                <input type="checkbox" id="task3">
+                                <label for="task3">Responder dúvidas no fórum</label>
+                                <span class="task-due">5 pendentes</span>
+                            </div>
+                        </div>
+                        <div class="add-task">
+                            <input type="text" placeholder="Adicionar nova tarefa">
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre a BRATSO</h3>
+                <p>Transformando vidas através da educação em negócios, empreendedorismo e tecnologia desde 2023.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                     <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos-uso.html">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Luís Viana Filho, 13223 - São Cristóvão, Salvador - BA</p>
+                <p><i class="fas fa-phone"></i> (71) 3333-4444</p>
+                <p><i class="fas fa-envelope"></i> contato@bratso.com.br</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 BRATSO. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Preencher informações do aluno
+        document.addEventListener('DOMContentLoaded', function() {
+            const userEmail = localStorage.getItem('userEmail');
+            if (userEmail) {
+                document.getElementById('userEmail').textContent = userEmail;
+                document.getElementById('studentName').textContent = userEmail.split('@')[0];
+            }
+            
+            // Mostrar/ocultar detalhes do plano
+            document.getElementById('togglePlanFeatures').addEventListener('click', function() {
+                const details = document.getElementById('planFeatures');
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                this.innerHTML = details.style.display === 'none' ? 
+                    '<i class="fas fa-info-circle"></i> Ver benefícios' : 
+                    '<i class="fas fa-times-circle"></i> Ocultar';
+            });
+        });
+    </script>
+</body>
+</html>

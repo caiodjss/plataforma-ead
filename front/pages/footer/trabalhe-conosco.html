@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco | BRATSO</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header igual ao da política de privacidade -->
+
+    <main class="careers-page">
+        <section class="page-header">
+            <div class="container">
+                <h1>Trabalhe Conosco</h1>
+                <p>Faça parte do time que está transformando a educação no Brasil</p>
+            </div>
+        </section>
+
+        <section class="careers-intro">
+            <div class="container">
+                <h2>Por que trabalhar na BRATSO?</h2>
+                <p>Na BRATSO, acreditamos que pessoas talentosas e comprometidas são o coração do nosso sucesso. Oferecemos um ambiente dinâmico, oportunidades de crescimento e a chance de impactar milhares de vidas através da educação.</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Propósito</h3>
+                        <p>Trabalhe em algo que realmente faz diferença na sociedade</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Crescimento</h3>
+                        <p>Oportunidades contínuas de desenvolvimento profissional</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Time</h3>
+                        <p>Colabore com profissionais talentosos e apaixonados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="open-positions">
+            <div class="container">
+                <h2>Vagas Abertas</h2>
+                
+                <div class="position-card">
+                    <h3>Desenvolvedor Front-end</h3>
+                    <div class="position-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Remoto</span>
+                        <span><i class="fas fa-briefcase"></i> Tempo Integral</span>
+                    </div>
+                    <p>Buscamos um desenvolvedor front-end com experiência em React para ajudar a construir nossa plataforma de educação.</p>
+                    <a href="#apply" class="apply-btn">Candidate-se</a>
+                </div>
+
+                <div class="position-card">
+                    <h3>Designer Instrucional</h3>
+                    <div class="position-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> São Paulo/SP</span>
+                        <span><i class="fas fa-briefcase"></i> Meio Período</span>
+                    </div>
+                    <p>Responsável por criar experiências de aprendizagem envolventes e eficazes para nossos cursos online.</p>
+                    <a href="#apply" class="apply-btn">Candidate-se</a>
+                </div>
+
+                <div class="position-card">
+                    <h3>Atendimento ao Cliente</h3>
+                    <div class="position-meta">
+                        <span><i class="fas fa-map-marker-alt"></i> Remoto</span>
+                        <span><i class="fas fa-briefcase"></i> Tempo Integral</span>
+                    </div>
+                    <p>Ajudar nossos alunos a terem a melhor experiência possível com a plataforma BRATSO.</p>
+                    <a href="#apply" class="apply-btn">Candidate-se</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="apply" class="application-form">
+            <div class="container">
+                <h2>Candidate-se</h2>
+                <form id="careerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="position">Vaga de Interesse</label>
+                        <select id="position" required>
+                            <option value="">Selecione uma vaga</option>
+                            <option value="frontend">Desenvolvedor Front-end</option>
+                            <option value="designer">Designer Instrucional</option>
+                            <option value="atendimento">Atendimento ao Cliente</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="resume">Currículo (PDF)</label>
+                        <input type="file" id="resume" accept=".pdf" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Por que você quer trabalhar na BRATSO?</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Enviar Candidatura</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé igual ao das outras páginas -->
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno | BRATSO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo-bratso.png" alt="BRATSO Logo">
+                <div class="logo-text">
+                    <h1>BRATSO</h1>
+                    <p class="tagline">Educação Transformadora</p>
+                </div>
+            </a>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="aluno.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="aluno-cursos.html"><i class="fas fa-book"></i> Meus Cursos</a></li>
+                <li><a href="aluno-mentorias.html"><i class="fas fa-chalkboard-teacher"></i> Mentorias</a></li>
+                <li><a href="aluno-eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-actions">
+            <div class="user-info">
+                <span class="user-email" id="userEmail"></span>
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="student-dashboard">
+        <section class="welcome-banner">
+            <div class="container">
+                <div class="welcome-content">
+                    <h1>Bem-vindo, <span id="studentName">Aluno</span>!</h1>
+                    <p>Confira seu progresso e continue sua jornada de aprendizagem</p>
+                </div>
+                <div class="plan-info">
+                    <span class="plan-badge" id="studentPlan">Plano Empreendedor</span>
+                    <div class="plan-features-toggle">
+                        <button id="togglePlanFeatures"><i class="fas fa-info-circle"></i> Ver benefícios</button>
+                    </div>
+                </div>
+                
+                <div id="planFeatures" class="plan-features-details">
+                    <h4>Seus benefícios:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Acesso a todos os cursos e materiais</li>
+                        <li><i class="fas fa-check"></i> 4 mentorias individuais por mês</li>
+                        <li><i class="fas fa-check"></i> Participação em eventos exclusivos</li>
+                        <li><i class="fas fa-check"></i> Cursos de capacitação gratuitos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="student-progress">
+            <div class="container">
+                <h2><i class="fas fa-chart-line"></i> Seu Progresso</h2>
+                
+                <div class="progress-cards">
+                    <div class="progress-card">
+                        <div class="course-header">
+                            <h3>Desenvolvimento de Jogos</h3>
+                            <span class="course-status">Em andamento</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                        <div class="progress-meta">
+                            <span>65% concluído</span>
+                            <span>15/23 aulas</span>
+                        </div>
+                        <div class="module-progress">
+                            <h4>Módulos:</h4>
+                            <div class="module">
+                                <span>1. Introdução ao Unity</span>
+                                <div class="module-bar">
+                                    <div class="module-fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="module">
+                                <span>2. Programação C#</span>
+                                <div class="module-bar">
+                                    <div class="module-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="module">
+                                <span>3. Física e Colisões</span>
+                                <div class="module-bar">
+                                    <div class="module-fill" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="aluno-curso-detalhe.html" class="continue-btn">Continuar Curso</a>
+                    </div>
+                    
+                    <div class="progress-card">
+                        <div class="course-header">
+                            <h3>Empreendedorismo Digital</h3>
+                            <span class="course-status">Em andamento</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 42%"></div>
+                        </div>
+                        <div class="progress-meta">
+                            <span>42% concluído</span>
+                            <span>8/19 aulas</span>
+                        </div>
+                        <div class="module-progress">
+                            <h4>Módulos:</h4>
+                            <div class="module">
+                                <span>1. Modelo de Negócios</span>
+                                <div class="module-bar">
+                                    <div class="module-fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="module">
+                                <span>2. Validação de Ideias</span>
+                                <div class="module-bar">
+                                    <div class="module-fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="module">
+                                <span>3. Marketing Digital</span>
+                                <div class="module-bar">
+                                    <div class="module-fill" style="width: 10%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="aluno-curso-detalhe.html" class="continue-btn">Continuar Curso</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="student-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-card video-lessons">
+                        <h3><i class="fas fa-play-circle"></i> Aulas Recentes</h3>
+                        <div class="video-list">
+                            <div class="video-item">
+                                <div class="video-thumbnail" style="background-image: url('../images/curso-dev-jogos.png');">
+                                    <div class="video-duration">12:45</div>
+                                    <div class="video-watched"><i class="fas fa-check-circle"></i> Assistido</div>
+                                    <div class="video-progress" style="width: 100%"></div>
+                                </div>
+                                <h4>Introdução ao Unity</h4>
+                                <p>Módulo 3 - Desenvolvimento de Jogos</p>
+                                <div class="video-actions">
+                                    <a href="#" class="action-btn"><i class="fas fa-redo"></i> Revisar</a>
+                                    <a href="#" class="action-btn"><i class="fas fa-download"></i> Material</a>
+                                </div>
+                            </div>
+                            <div class="video-item">
+                                <div class="video-thumbnail" style="background-image: url('../images/curso-empreendedorismo.png');">
+                                    <div class="video-duration">18:30</div>
+                                    <div class="video-watched"><i class="fas fa-check-circle"></i> Assistido</div>
+                                    <div class="video-progress" style="width: 85%"></div>
+                                </div>
+                                <h4>Modelo de Negócios</h4>
+                                <p>Módulo 2 - Empreendedorismo Digital</p>
+                                <div class="video-actions">
+                                    <a href="#" class="action-btn"><i class="fas fa-redo"></i> Revisar</a>
+                                    <a href="#" class="action-btn"><i class="fas fa-download"></i> Material</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="aluno-cursos.html" class="see-all">Ver todas as aulas</a>
+                    </div>
+                    
+                    <div class="content-card materials">
+                        <h3><i class="fas fa-file-download"></i> Materiais Recentes</h3>
+                        <ul class="material-list">
+                            <li>
+                                <i class="fas fa-file-pdf"></i>
+                                <div>
+                                    <h4>Apostila - Unity Básico</h4>
+                                    <p>Baixado em 15/03/2023 | 3.2MB</p>
+                                    <div class="download-progress">
+                                        <span>Baixado 100%</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="download-btn"><i class="fas fa-download"></i></a>
+                            </li>
+                            <li>
+                                <i class="fas fa-file-excel"></i>
+                                <div>
+                                    <h4>Planilha Financeira Modelo</h4>
+                                    <p>Baixado em 12/03/2023 | 1.5MB</p>
+                                    <div class="download-progress">
+                                        <span>Baixado 100%</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="download-btn"><i class="fas fa-download"></i></a>
+                            </li>
+                            <li>
+                                <i class="fas fa-file-word"></i>
+                                <div>
+                                    <h4>Template Canvas de Negócios</h4>
+                                    <p>Baixado em 10/03/2023 | 2.1MB</p>
+                                    <div class="download-progress">
+                                        <span>Baixado 100%</span>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 100%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="download-btn"><i class="fas fa-download"></i></a>
+                            </li>
+                        </ul>
+                        <a href="aluno-materiais.html" class="see-all">Ver todos os materiais</a>
+                    </div>
+                    
+                    <div class="content-card messages">
+                        <h3><i class="fas fa-inbox"></i> Mensagens <span class="badge">2</span></h3>
+                        <div class="message-list">
+                            <div class="message-item unread">
+                                <div class="message-sender">
+                                    <img src="../images/professor1.jpg" alt="Professor">
+                                    <div>
+                                        <span>Prof. Carlos</span>
+                                        <span class="message-subject">Feedback sobre seu projeto</span>
+                                    </div>
+                                </div>
+                                <div class="message-preview">
+                                    <p>Sugestões para melhorar sua mecânica de jogo conforme discutido na última mentoria...</p>
+                                </div>
+                                <div class="message-meta">
+                                    <span class="message-time">Hoje, 10:30</span>
+                                    <a href="#" class="message-action"><i class="fas fa-reply"></i></a>
+                                </div>
+                            </div>
+                            <div class="message-item">
+                                <div class="message-sender">
+                                    <img src="../images/bratso-icon.png" alt="BRATSO">
+                                    <div>
+                                        <span>Equipe BRATSO</span>
+                                        <span class="message-subject">Novo evento disponível</span>
+                                    </div>
+                                </div>
+                                <div class="message-preview">
+                                    <p>Workshop de Pitch para Startups com investidores convidados. Inscreva-se até sexta...</p>
+                                </div>
+                                <div class="message-meta">
+                                    <span class="message-time">Ontem, 15:45</span>
+                                    <a href="#" class="message-action"><i class="fas fa-reply"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="aluno-mensagens.html" class="see-all">Ver todas as mensagens</a>
+                    </div>
+                    
+                    <div class="content-card upcoming">
+                        <h3><i class="fas fa-calendar-check"></i> Próximos Compromissos</h3>
+                        <div class="event-list">
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="day">22</span>
+                                    <span class="month">MAR</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Mentoria Individual</h4>
+                                    <p><i class="fas fa-clock"></i> 15:00 - 16:00</p>
+                                    <p><i class="fas fa-video"></i> Online</p>
+                                    <p><i class="fas fa-user-tie"></i> Com Prof. Carlos</p>
+                                </div>
+                                <div class="event-actions">
+                                    <a href="#" class="event-btn"><i class="fas fa-calendar-plus"></i> Agendar</a>
+                                    <a href="#" class="event-btn"><i class="fas fa-video"></i> Entrar</a>
+                                </div>
+                            </div>
+                            <div class="event-item">
+                                <div class="event-date">
+                                    <span class="day">25</span>
+                                    <span class="month">MAR</span>
+                                </div>
+                                <div class="event-info">
+                                    <h4>Workshop: Canvas</h4>
+                                    <p><i class="fas fa-clock"></i> 19:00 - 21:00</p>
+                                    <p><i class="fas fa-video"></i> Online</p>
+                                    <p><i class="fas fa-users"></i> Turma ED23B</p>
+                                </div>
+                                <div class="event-actions">
+                                    <a href="#" class="event-btn"><i class="fas fa-calendar-plus"></i> Agendar</a>
+                                    <a href="#" class="event-btn"><i class="fas fa-video"></i> Entrar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="aluno-eventos.html" class="see-all">Ver todos os eventos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="student-support">
+            <div class="container">
+                <h2><i class="fas fa-headset"></i> Suporte e Contato</h2>
+                <div class="support-options">
+                    <a href="#" class="support-option">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Grupo da Turma</span>
+                        <p>Acesso exclusivo para alunos do mesmo curso</p>
+                    </a>
+                    <a href="#" class="support-option">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contatar Professor</span>
+                        <p>Tire dúvidas diretamente com seu instrutor</p>
+                    </a>
+                    <a href="#" class="support-option">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Central de Ajuda</span>
+                        <p>Tutoriais e FAQ para usar a plataforma</p>
+                    </a>
+                    <a href="#" class="support-option">
+                        <i class="fas fa-comments"></i>
+                        <span>Fórum da Comunidade</span>
+                        <p>Interaja com outros alunos e professores</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre a BRATSO</h3>
+                <p>Transformando vidas através da educação em negócios, empreendedorismo e tecnologia desde 2023.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos-uso.html">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Luís Viana Filho, 13223 - São Cristóvão, Salvador - BA</p>
+                <p><i class="fas fa-phone"></i> (71) 3333-4444</p>
+                <p><i class="fas fa-envelope"></i> contato@bratso.com.br</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 BRATSO. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Preencher informações do aluno
+        document.addEventListener('DOMContentLoaded', function() {
+            const userEmail = localStorage.getItem('userEmail');
+            if (userEmail) {
+                document.getElementById('userEmail').textContent = userEmail;
+                document.getElementById('studentName').textContent = userEmail.split('@')[0];
+            }
+            
+            // Mostrar/ocultar detalhes do plano
+            document.getElementById('togglePlanFeatures').addEventListener('click', function() {
+                const details = document.getElementById('planFeatures');
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                this.innerHTML = details.style.display === 'none' ? 
+                    '<i class="fas fa-info-circle"></i> Ver benefícios' : 
+                    '<i class="fas fa-times-circle"></i> Ocultar';
+            });
+        });
+    </script>
+</body>
+</html>

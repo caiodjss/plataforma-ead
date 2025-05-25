@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração | BRATSO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+        <div class="logo-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo-bratso.png" alt="BRATSO Logo">
+                <div class="logo-text">
+                    <h1>BRATSO</h1>
+                    <p class="tagline">Educação Transformadora</p>
+                </div>
+            </a>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="aluno.html" class="active"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="aluno-cursos.html"><i class="fas fa-book"></i> Cursos</a></li>
+                <li><a href="aluno-mentorias.html"><i class="fas fa-chalkboard-teacher"></i> Mentorias</a></li>
+                <li><a href="aluno-eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-actions">
+            <div class="user-info">
+                <span class="user-email" id="userEmail"></span>
+                <button id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </button>
+            </div>
+        </div>
+    </header>
+
+<main class="dashboard">
+    <h2>Área Administrativa</h2>
+
+    <section class="gestao">
+        <h3>Gerenciamento de Plataforma</h3>
+        <div class="admin-cards">
+            <div class="admin-card">
+                <h4>Usuários</h4>
+                <p>Criar, editar e remover alunos e professores.</p>
+                <button>Gerenciar Usuários</button>
+            </div>
+            <div class="admin-card">
+                <h4>Cursos</h4>
+                <p>Adicionar ou remover cursos e módulos.</p>
+                <button>Gerenciar Cursos</button>
+            </div>
+            <div class="admin-card">
+                <h4>Relatórios</h4>
+                <p>Analisar desempenho dos alunos e turmas.</p>
+                <button>Visualizar Relatórios</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre a BRATSO</h3>
+                <p>Transformando vidas através da educação em negócios, empreendedorismo e tecnologia desde 2023.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+                    <li><a href="termos-uso.html">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Luís Viana Filho, 13223 - São Cristóvão, Salvador - BA</p>
+                <p><i class="fas fa-phone"></i> (71) 3333-4444</p>
+                <p><i class="fas fa-envelope"></i> contato@bratso.com.br</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 BRATSO. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Preencher informações do aluno
+        document.addEventListener('DOMContentLoaded', function() {
+            const userEmail = localStorage.getItem('userEmail');
+            if (userEmail) {
+                document.getElementById('userEmail').textContent = userEmail;
+                document.getElementById('studentName').textContent = userEmail.split('@')[0];
+            }
+            
+            // Mostrar/ocultar detalhes do plano
+            document.getElementById('togglePlanFeatures').addEventListener('click', function() {
+                const details = document.getElementById('planFeatures');
+                details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                this.innerHTML = details.style.display === 'none' ? 
+                    '<i class="fas fa-info-circle"></i> Ver benefícios' : 
+                    '<i class="fas fa-times-circle"></i> Ocultar';
+            });
+        });
+    </script>
+
+</body>
+</html>

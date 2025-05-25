@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja um Professor | BRATSO</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header igual ao da política de privacidade -->
+
+    <main class="become-teacher">
+        <section class="page-header">
+            <div class="container">
+                <h1>Seja um Professor BRATSO</h1>
+                <p>Compartilhe seu conhecimento e impacte milhares de alunos</p>
+            </div>
+        </section>
+
+        <section class="teacher-benefits">
+            <div class="container">
+                <h2>Por que ensinar na BRATSO?</h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-globe"></i>
+                        <h3>Alcance Global</h3>
+                        <p>Seu curso pode alcançar alunos em todo o Brasil e no exterior</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3>Remuneração</h3>
+                        <p>Ganhe por cada aluno matriculado em seu curso</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Suporte</h3>
+                        <p>Nossa equipe te ajuda em todo o processo de criação do curso</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>Como Funciona</h2>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Cadastro</h3>
+                        <p>Preencha o formulário de inscrição como professor</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Análise</h3>
+                        <p>Nossa equipe avalia sua proposta de curso</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Gravação</h3>
+                        <p>Gravamos seu curso em nosso estúdio ou remotamente</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Lançamento</h3>
+                        <p>Seu curso é publicado e disponibilizado para venda</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="teacher-requirements">
+            <div class="container">
+                <h2>Requisitos para Professores</h2>
+                <ul class="requirements-list">
+                    <li>Comprovada experiência na área do curso</li>
+                    <li>Certificações ou formação acadêmica relevante</li>
+                    <li>Habilidade para ensinar de forma clara e envolvente</li>
+                    <li>Disponibilidade para gravar e atualizar o conteúdo</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="application-form">
+            <div class="container">
+                <h2>Inscreva-se como Professor</h2>
+                <form id="teacherForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="teacherName">Nome Completo</label>
+                            <input type="text" id="teacherName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="teacherEmail">Email</label>
+                            <input type="email" id="teacherEmail" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="teacherArea">Área de Atuação</label>
+                            <select id="teacherArea" required>
+                                <option value="">Selecione</option>
+                                <option value="negocios">Negócios</option>
+                                <option value="empreendedorismo">Empreendedorismo</option>
+                                <option value="tecnologia">Tecnologia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="teacherExperience">Anos de Experiência</label>
+                            <input type="number" id="teacherExperience" min="1" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="courseProposal">Proposta de Curso</label>
+                        <textarea id="courseProposal" rows="5" placeholder="Descreva o curso que gostaria de ministrar, público-alvo e objetivos de aprendizagem" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="teacherResume">Currículo (PDF)</label>
+                        <input type="file" id="teacherResume" accept=".pdf" required>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Enviar Inscrição</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé igual ao das outras páginas -->
+</body>
+</html>
