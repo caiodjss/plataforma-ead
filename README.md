@@ -92,26 +92,6 @@ yarn dev  # Inicie o app React
 🔹 **Backend:** `http://localhost:3000`  
 🔹 **API Docs (Swagger):** `http://localhost:3000/api-docs`  
 
----
-
-## **📜 Licença**  
-Este projeto está sob a licença **MIT**. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.  
-
----
-
-## **💡 Contribuição**  
-Quer ajudar? Siga estes passos:  
-1. **Fork** o projeto  
-2. Crie uma **branch** (`git checkout -b feature/nova-funcionalidade`)  
-3. **Commit** suas alterações (`git commit -m "Adiciona nova funcionalidade"`)  
-4. **Push** para a branch (`git push origin feature/nova-funcionalidade`)  
-5. Abra um **Pull Request**  
-
----
-
-## **📩 Contato**  
-✉️ **Email:** contato@inovalearn.com  
-🌍 **Site:** [www.inovalearn.com](https://www.inovalearn.com)  
 
 ---
 
