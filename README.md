@@ -1,4 +1,4 @@
-# **🎓 Bratso - Plataforma EAD Avançada**  
+# **🎓 Bratso - Plataforma EAD**  
 
 **Uma plataforma EAD moderna e interativa para cursos de negócios, empreendedorismo e tecnologia.**  
 
